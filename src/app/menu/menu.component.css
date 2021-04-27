@@ -1,0 +1,15 @@
+.fs-12 {
+    font-size: 12pt;
+}
+
+a {
+    cursor: pointer;
+}
+
+nav {
+    background-color: black !important;
+}
+
+.rose {
+    color: rgba(227, 9, 247, 0.979);
+}
