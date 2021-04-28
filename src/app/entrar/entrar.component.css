@@ -1,0 +1,19 @@
+#img-bg {
+    background-image: url("https://i.pinimg.com/originals/ed/c2/8e/edc28e9d352c05808230d2d789149f26.png");
+    min-height: 695px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div {
+    background-color: black !important;
+}
+
+.rose {
+    color: rgba(227, 9, 247, 0.979)
+}
+
+hr {
+    background-color: rgba(227, 9, 247, 0.979);
+}
