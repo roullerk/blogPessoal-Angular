@@ -7,20 +7,30 @@
             <div class="col-md-10">
                 <h2 class="text-center rose">Cadastro</h2>
                 <div class="form-group">
-                    <input class="form-control rose" type="text" name="nome" id="nome" placeholder="Nome">
+                    <input [(ngModel)]='user.nome' class="form-control rose" type="text" name="nome" id="nome" placeholder="Nome">
                 </div>
                 <div class="form-group">
-                    <input class="form-control rose" type="text" name="usuario" id="usuario" placeholder="Usuario">
+                    <input [(ngModel)]='user.usuario' class="form-control rose" type="text" name="usuario" id="usuario" placeholder="Usuario">
                 </div>
                 <div class="form-group">
-                    <input class="form-control rose" type="password" name="senha" id="senha" placeholder="Senha">
+                    <input [(ngModel)]='user.foto' class="form-control rose" type="text" name="foto" id="foto" placeholder="Link da Foto">
                 </div>
                 <div class="form-group">
-                    <input class="form-control rose" type="password" name="confirmar senha" id="confirmar senha" placeholder="Confirme a Senha">
+                    <input (input)='confirmSenha($event)' class="form-control rose" type="password" name="senha" id="senha" placeholder="Senha">
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]='user.senha' class="form-control rose" type="password" name="confirmar senha" id="confirmar senha" placeholder="Confirme a Senha">
+                </div>
+                <div class="form-group">
+                    <select class="form-control rose" name="tipo" id="tipo" (change)="tipoUser($event)">
+                      <option>Selecione seu tipo de usuário</option>
+                    <option value="normal">Normal</option>
+                    <option value="adm">Administrador</option>
+                    </select>
                 </div>
                 <div d-flex justify-content-center>
                     <button type="submit" class="btn btn-danger mr-2">Cancelar</button>
-                    <button type="submit" class="btn btn-success ml-1">Cadastrar</button>
+                    <a routerLink="/entrar"><button type="submit" class="btn btn-success ml-1" (click) = "cadastrar()"> Cadastrar</button></a>
                 </div>
             </div>
 
