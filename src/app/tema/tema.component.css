@@ -7,9 +7,13 @@
 }
 
 button:hover {
-    color: rgba(92, 9, 247, 0.979);
+    color: rgb(0, 255, 106);
 }
 
 .bg-rose {
+    background-color: rgba(227, 9, 247, 0.979);
+}
+
+button {
     background-color: rgba(227, 9, 247, 0.979);
 }
