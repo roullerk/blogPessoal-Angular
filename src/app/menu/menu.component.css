@@ -13,3 +13,7 @@ nav {
 .rose {
     color: rgba(227, 9, 247, 0.979);
 }
+
+.br {
+    border-color: rgba(227, 9, 247, 0.979);
+}

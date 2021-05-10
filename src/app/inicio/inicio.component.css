@@ -1,0 +1,15 @@
+.rose {
+    color: rgba(227, 9, 247, 0.979);
+}
+
+.bg-black {
+    background-color: black;
+}
+
+button:hover {
+    color: rgba(92, 9, 247, 0.979);
+}
+
+.bg-rose {
+    background-color: rgba(227, 9, 247, 0.979);
+}
